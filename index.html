@@ -1,0 +1,100 @@
+<link rel="stylesheet" href="style.css" />
+<script>
+  function carousel(n) {
+  var i;
+  var x = document.getElementsByClassName('slider');
+  if (n === 6) {
+    delayedCarousel(1);
+  }
+  //for (i = 0; i < x.length; i++) {
+  x[n].style.display = 'block';
+  if (n === 1) x[5].style.display = 'none';
+  //}
+  //slideIndex++;
+  //if (n > x.length) {/*slideIndex = 1*/
+  x[n - 1].style.display = 'none';
+  //setTimeout(carousel, 5000); // Change image every 5 seconds
+}
+function delayedCarousel(n) {
+  setTimeout(function () {
+    carousel(n);
+  }, 3000);
+}
+
+function changeSlide(n) {
+  showDivs((n += n));
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName('slider');
+  if (n > x.length) {
+    n = 1;
+  }
+  if (n < 1) {
+    n = x.length;
+  }
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = 'none';
+    x[i].style.width = '100%';
+  }
+  x[n - 1].style.display = 'block';
+}
+</script>
+<div style="margin-bottom: 30px">
+  <img
+    class="slider"
+    src="https://picsum.photos/50/300"
+    onload="delayedCarousel(1);"
+  />
+  <div class="slider-text" id="slidert1">
+    Text here, you can just ignore this.
+  </div>
+  <img
+    loading="lazy"
+    class="slider"
+    src="https://picsum.photos/100/300"
+    onload="delayedCarousel(2);"
+    style="display: none"
+  />
+  <img
+    loading="lazy"
+    class="slider"
+    src="https://picsum.photos/200/300"
+    onload="delayedCarousel(3);"
+    style="display: none"
+  />
+  <img
+    loading="lazy"
+    class="slider"
+    src="https://picsum.photos/300/300"
+    onload="delayedCarousel(4);"
+    style="display: none"
+  />
+  <img
+    loading="lazy"
+    class="slider"
+    src="https://picsum.photos/400/300"
+    onload="delayedCarousel(5);"
+    style="display: none"
+  />
+  <img
+    loading="lazy"
+    class="slider"
+    src="https://picsum.photos/500/300"
+    onload="delayedCarousel(1);"
+    style="display: none"
+  />
+  <button
+    class="slider-button slider-black slider-display-left"
+    onclick="changeSlide(-1);"
+  >
+    &#10094;
+  </button>
+  <button
+    class="slider-button slider-black slider-display-right"
+    onclick="changeSlide(1);"
+  >
+    &#10095;
+  </button>
+</div>

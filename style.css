@@ -1,0 +1,735 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  font-family: "WeblySleek UI Semilight", "Lucida Grande", sans-serif !important;
+}
+
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+@import "stylesheet.css";
+
+a.navbar-brand {
+    margin-right: 0rem;
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+    left: 300px;
+}
+
+.navbar {
+    padding: .5rem 0rem;
+}
+
+.navbar-nav a:hover {
+    color: #449528 !important;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+    color: #0366d6;
+    /*removes underlines from links*/
+    text-decoration: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-divider {
+    border-bottom: 1px solid gray;
+}
+
+.navbar-expand-sm .navbar-nav .nav-link {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar-nav li {
+    padding-right: 10px;
+}
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 18px;
+}
+
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    font-family: "WeblySleek UI Semilight", "Lucida Grande", sans-serif !important;
+}
+
+.footer {
+    height: 200px;
+    width: 1170px;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+}
+
+.global-div {
+    width: 100%;
+}
+
+.centered {
+    width: 1170px;
+    margin: 0 auto;
+    box-shadow: 0 0 5px 1px rgba(0,0,0,.16) !important;
+    height: 100%;
+}
+
+.footer-div {
+    width: 250px;
+    margin: 0 auto;
+}
+
+.article {
+    width: calc(33.3333% - (.66666666666667*30px));
+    display: inline-block;
+    padding-right: 15px;
+}
+
+.article-image {
+    margin-bottom: 30px;
+}
+
+.panel-grid.panel-no-style {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: nowrap;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.main-image {
+    padding-bottom: 30px;
+}
+
+h4 {
+    font-family: "WeblySleek UI Semibold", "Lucida Grande", sans-serif;
+    line-height: 28px;
+    font-weight: 700;
+    font-style: normal;
+    color: #449528;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.containerfooter {
+    float: right;
+    width: 75%;
+    font-family: "WeblySleek UI Semilight", "Lucida Grande", sans-serif;
+    line-height: 18px;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    font-size: 14px;
+}
+
+.footer-text-left {
+    font-family: "WeblySleek UI Semilight", "Lucida Grande", sans-serif;
+    line-height: 18px;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    font-size: 14px;
+}
+
+.links-div {
+    width: 1170px;
+    margin: 0 auto;
+    padding-top: 5px;
+}
+
+.links-color {
+    color: #449528;
+}
+
+.links-right {
+    float: right;
+}
+
+.copyright {
+    float: left;
+}
+
+:is(h1, h2, h3, h4, h5, h6, strong) {
+    color: #449528;
+}
+
+h1 {
+    font-family: "WeblySleek UI Semibold", "Lucida Grande", sans-serif;
+    line-height: 40px;
+    /*font-weight: 700;*/
+    font-style: normal;
+    color: #449528;
+    font-size: 32px;
+    margin-bottom: 40px;
+    -webkit-font-smoothing: antialiased;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.nav-headlines {
+    font-weight: bold;
+}
+
+.button-not-found {
+    background-color: #449528; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 1170px;
+    /*Bugfix Slider*/
+    z-index: 2;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+     padding-top: 102px;
+}
+
+.centeredcontainer {
+    display: flex;
+    justify-content: center;
+}
+
+ul + .hidden {
+    list-style-type: none;
+/*    font-weight: bold;
+    font-size: 20px;*/
+}
+
+.company-content {
+    width: 70%;
+    display: inline-grid;
+    margin-left: 75px;
+}
+
+.side-menu {
+    display: inline-grid;
+    width: 20%;
+}
+
+span {
+    color: #449528;
+}
+
+.company-sub-content {
+    display: block;
+    width: 75%;
+    margin-left: 50px;
+}
+}  
+
+/*Slider CSS*/
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --carousel-width: 80vw;
+    --carousel-height: calc(calc(calc(9 / 16) * var(--carousel-width)));
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel {
+    width: var(--carousel-width);
+    height: var(--carousel-height);
+    contain: strict;
+    margin-top: 1vw;
+    border-radius: 3vmin;
+}
+
+.scroll {
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+    width: 100%;
+    height: 60%;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+    .scroll::-webkit-scrollbar {
+        display: none;
+    }
+
+.scroll-item {
+    width: var(--carousel-width);
+}
+
+    .scroll-item > img {
+        object-fit: contain;
+        width: 100%;
+        rgba(0, 0, 0, 0.2);
+        border-radius: 1rem;
+    }
+
+        .scroll-item > img:active {
+            cursor: grabbing;
+            cursor: -webkit-grabbing;
+        }
+
+.scroll-item-outer {
+    margin: 1vw;
+}
+
+    .scroll-item-outer:first-of-type {
+        margin: 0;
+    }
+
+@supports (scroll-snap-align: start) {
+    .scroll {
+        scroll-snap-type: x mandatory;
+    }
+
+    .scroll-item-outer {
+        scroll-snap-align: center;
+    }
+}
+
+@supports not (scroll-snap-align: start) {
+    .scroll {
+        -webkit-scroll-snap-type: mandatory;
+        scroll-snap-type: mandatory;
+        -webkit-scroll-snap-destination: 0 50%;
+        scroll-snap-destination: 0 50%;
+        -webkit-scroll-snap-points-x: repeat(100%);
+        scroll-snap-points-x: repeat(100%);
+    }
+
+    .scroll-item-outer {
+        scroll-snap-coordinate: 0 0;
+    }
+}
+
+#navigate {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: var(--carousel-width);
+    margin-top: -5vw;
+}
+
+    #navigate a {
+        text-decoration: none;
+        color: #333;
+        font-size: 1.2rem;
+        background: #ddd;
+        z-index: 1;
+        line-height: 0.3rem;
+        border-radius: 1rem;
+        padding: 0.8rem;
+        transition: box-shadow 0.5s;
+    }
+
+        #navigate a:hover {
+            box-shadow: 0 0 2rem -6px;
+        }
+/*POTENTIALLY REMOVE THIS BELOW*/
+
+/*.marked {
+    color: #489529 !important;
+}*/
+.dropdown .btn:hover {
+    background: cyan;
+    color: #489529 !important;
+}
+
+.dropdown .btn:active {
+    background: cyan;
+    color: #489529 !important;
+}
+
+.dropdown .btn:focus {
+    background: cyan;
+    color: #489529 !important;
+}
+
+/*drop-down override*/
+div.btn-group.show div.dropdown-menu.show {
+    background-color: #4b4b4b !important;
+}
+
+.dropdown-menu {
+    padding: 0;
+    text-indent: 10px;
+}
+
+.dropdown-item {
+    font-size: 0.875rem;
+}
+
+    div.btn-group.show div.dropdown-menu.show button.dropdown-item {
+        color: #e1e1e1 !important;
+    }
+
+
+
+    div.btn-group.show div.dropdown-menu.show div.dropdown-divider {
+        border-top: 1px solid rgba(50, 50, 50, 0.9);
+    }
+
+    div.btn-group.show div.dropdown-menu.show button.dropdown-item:hover,
+    div.btn-group.show div.dropdown-menu.show button.dropdown-item:focus {
+        background-color: #1e1e1e;
+        color: #f0f0f0 !important;
+    }
+
+/*    POTENTIALLY REMOVE ABOVE THIS*/
+
+/*GENERAL SLIDER CLASS (ANIMATIONS WERE ADDED HERE)*/
+
+.slider {
+    -webkit-animation-name: anim_slides;
+    -webkit-animation-duration: 24.0s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-delay: 0;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: anim_slides;
+    -moz-animation-duration: 24.0s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-delay: 0;
+    -moz-animation-play-state: running;
+    -moz-animation-fill-mode: forwards;
+}
+
+/*SLIDER BUTTONS BELOW*/
+
+.slider-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+}
+
+.slider-black {
+    color: #fff !important;
+    background-color: #000 !important
+}
+
+.slider-display-left {
+    /*WAS ABSOLUTE*/
+    position: static;
+    top: 50%;
+    left: 0%;
+    /*WAS -50%*/
+    transform: translate(0%,-650%);
+    -ms-transform: translate(-0%,-650%)
+}
+
+.slider-display-right {
+    /*WAS ABSOLUTE*/
+    position: static;
+    top: 50%;
+    right: 0%;
+    /*WAS 0%,-50%*/
+    transform: translate(2623%,-650%);
+    -ms-transform: translate(2623%,-650%)
+}
+
+/*SLIDER ANIMATIONS #2*/
+
+/* keyframes #anim_slides */
+@-webkit-keyframes anim_slides {
+    0% {
+        opacity: 0;
+    }
+
+    6% {
+        opacity: 1;
+    }
+
+    24% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes anim_slides {
+    0% {
+        opacity: 0;
+    }
+
+    6% {
+        opacity: 1;
+    }
+
+    24% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.slides ul li {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    /* css3 animation */
+    -webkit-animation-name: anim_slides;
+    -webkit-animation-duration: 24.0s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-delay: 0;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: anim_slides;
+    -moz-animation-duration: 24.0s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-delay: 0;
+    -moz-animation-play-state: running;
+    -moz-animation-fill-mode: forwards;
+}
+    /* css3 delays */
+    .slides ul li:nth-child(2), .slides ul li:nth-child(2) div {
+        -webkit-animation-delay: 6.0s;
+        -moz-animation-delay: 6.0s;
+    }
+
+    .slides ul li:nth-child(3), .slides ul li:nth-child(3) div {
+        -webkit-animation-delay: 12.0s;
+        -moz-animation-delay: 12.0s;
+    }
+
+    .slides ul li:nth-child(4), .slides ul li:nth-child(4) div {
+        -webkit-animation-delay: 18.0s;
+        -moz-animation-delay: 18.0s;
+    }
+
+    .slides ul li img {
+        display: block;
+    }
+/* keyframes #anim_titles */
+@-webkit-keyframes anim_titles {
+    0% {
+        left: 100%;
+        opacity: 0;
+    }
+
+    5% {
+        left: 10%;
+        opacity: 1;
+    }
+
+    20% {
+        left: 10%;
+        opacity: 1;
+    }
+
+    25% {
+        left: 100%;
+        opacity: 0;
+    }
+
+    100% {
+        left: 100%;
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes anim_titles {
+    0% {
+        left: 100%;
+        opacity: 0;
+    }
+
+    5% {
+        left: 10%;
+        opacity: 1;
+    }
+
+    20% {
+        left: 10%;
+        opacity: 1;
+    }
+
+    25% {
+        left: 100%;
+        opacity: 0;
+    }
+
+    100% {
+        left: 100%;
+        opacity: 0;
+    }
+}
+
+.slides ul li div {
+    background-color: #000000;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 0 5px #FFFFFF inset;
+    color: #FFFFFF;
+    font-size: 26px;
+    left: 10%;
+    margin: 0 auto;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    width: 200px;
+    /* css3 animation */
+    -webkit-animation-name: anim_titles;
+    -webkit-animation-duration: 24.0s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-delay: 0;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: anim_titles;
+    -moz-animation-duration: 24.0s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-delay: 0;
+    -moz-animation-play-state: running;
+    -moz-animation-fill-mode: forwards;
+}
+
+/*END OF ANIMATIONS*/
+
+.slider-text {
+    position: absolute;
+    mix-blend-mode: difference;
+}
+
+#slidert1 {
+    font-family: "WeblySleek UI Semibold", "Lucida Grande", sans-serif !important;
+    font-size: 28px;
+    font-weight: 400;
+    font-style: normal;
+    color: #449528 !important;
+    top: 300px;
+    left: 384px;
+    /*Format is the following: horizontal-shadow, vertical-shadow, blur*/
+    text-shadow: 3px 3px 5px black;
+    z-index: 10;
+}
+
+em {
+    font-family: "WeblySleek UI Semilight Italic";
+}
+
+strong {
+    font-family: "WeblySleek UI Semibold";
+}
+
+p {
+    font-family: "WeblySleek UI Semilight";
+}
+
+i {
+    font-family: "WeblySleek UI Semilight Italic";
+}
